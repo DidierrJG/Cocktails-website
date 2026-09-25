@@ -48,8 +48,9 @@ nav {
 }
 
 #buscar {
-    color: black;
     height: 32px;
+    border: 2px solid #334155;
+    color: #0f172a;
 }
 
 /*Footer*/
