@@ -1,0 +1,60 @@
+/*Centrar recibo*/
+section {
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilizar recibo*/
+#recibo {
+    border-radius: 5px;
+    background-color: #1e293b;
+    text-align: center;
+    padding: 20px;
+}
+
+#lista-compras {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#lista-compras li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 2px solid #334155;
+}
+
+.producto {
+    color: #e2e8f0;
+    text-align: left;
+}
+
+.precio {
+    color: #94a3b8;
+    text-align: right;
+}
+
+#redirecciones {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*Botones*/
+#pagar-boton {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f59e0b;
+    color: #0f172a;
+    cursor: pointer;
+}
+
+#pagar-boton:hover {
+  background-color: #d97706;
+}
+
+#pagar-boton:active {
+    background-color: green;
+}

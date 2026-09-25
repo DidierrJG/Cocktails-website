@@ -1,0 +1,86 @@
+/*Seccion de los cocteles*/
+#lista-cocteles {
+    margin: auto 10px auto 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+/*Articulo del coctel*/
+#lista-cocteles article {
+    border-radius: 5px;
+    background-color: #1e293b;
+    border-bottom: 5px solid #f59e0b;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.imagen-coctel {
+    text-align: center;
+}
+
+.imagen-coctel img {
+    border-radius: 5px;
+    border: 5px solid #334155;
+}
+
+.informacion-coctel {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.nombre-coctel {
+    margin: 0;
+}
+
+.alcohol-coctel, .identificador {
+    margin: 0;
+    color: #94a3b8;
+}
+
+.tamaños {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.tamaños li {
+    border-radius: 5px;
+    background-color: #39467e;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.tamaños li:hover {
+    background-color: #4c5ba1;
+}
+
+/*Informacion de compra*/
+.informacion-compra {
+    display: flex;
+    align-items: center;
+}
+
+.informacion-compra {
+    gap: 10px;
+}
+
+.comprar-boton {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f59e0b;
+    color: #0f172a;
+    cursor: pointer;
+}
+
+.comprar-boton:hover {
+  background-color: #d97706;
+}
+
+.comprar-boton:active {
+    background-color: green;
+}

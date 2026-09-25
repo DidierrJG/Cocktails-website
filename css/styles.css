@@ -1,36 +1,53 @@
+/*Global*/
 * {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  color: #f8fafc;
 }
 
 body {
-    background-color: #1f2642;
-    color: #ffffff;
+    background-color: #0f172a;
 }
 
-#cocktails-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-}
-
-#cocktails-list article {
+/*Barra de navegacion*/
+nav {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #4354a0;
-    border-bottom: 10px solid #5b71d6;
 }
 
-#cocktails-list article img {
+#busqueda {
+    align-items: center;
+    display: flex;
     border-radius: 5px;
 }
 
-.cocktail-name {
-    margin: 0;
+.iconos {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    margin-left: 5px;
+    color: #94a3b8;
+}
+
+.iconos svg, .iconos svg path {
+  color: inherit;
+  fill: currentColor;
+}
+
+.iconos:hover {
+    color: #f59e0b;
+    fill: #f59e0b;
+}
+
+#buscar {
+    color: black;
+    height: 32px;
 }
