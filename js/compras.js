@@ -1,26 +1,42 @@
 let compras = localStorage.getItem("usuario");
 compras = JSON.parse(compras);
 
-const listaCompras = document.querySelector("#lista-compras");
+const section = document.querySelector("section");
 
-let total = 0;
+if(!compras || compras.length == 0) {
+    section.innerHTML = "";
 
-for(const property in compras) {
-    const dato = document.createElement("li");
-    const precio = 20000 * compras[property];
+    const mensaje = document.createElement("p");
+    mensaje.textContent = "No tienes nada en el carrito."
+    section.appendChild(mensaje);
+} else {
+    const listaCompras = document.querySelector("#lista-compras");
 
-    total += precio;
+    let total = 0;
 
-    dato.innerHTML = `
-    <p class="producto">${property} x${compras[property]}</p>
-    <p class="precio">\$ ${precio.toLocaleString("es-CO")}</p>
+    for(const property in compras) {
+        const precio = 20000 * compras[property];
+
+        total += precio;
+        
+        const dato = document.createElement("li");
+        dato.innerHTML = `
+        <p class="producto">${property} x${compras[property]}</p>
+        <p class="precio">\$ ${precio.toLocaleString("es-CO")}</p>
+        `
+        listaCompras.appendChild(dato)
+    }
+
+    const datoTotal = document.createElement("li");
+    datoTotal.innerHTML = `
+        <h3 class="producto">Total</h3>
+        <h3 class="precio">\$ ${total.toLocaleString("es-CO")}</h3>
     `
-    listaCompras.appendChild(dato)
+    listaCompras.appendChild(datoTotal);
 }
 
-const datoTotal = document.createElement("li");
-datoTotal.innerHTML = `
-    <h3 class="producto">Total</h3>
-    <h3 class="precio">\$ ${total.toLocaleString("es-CO")}</h3>
-`
-listaCompras.appendChild(datoTotal);
+const pagarBoton = document.querySelector("#pagar-boton");
+
+pagarBoton.addEventListener("click", () => {
+    window.location.href = "pagar.html";
+})

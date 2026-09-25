@@ -1,0 +1,54 @@
+form {
+    background-color: #1e293b;
+    padding: 30px;
+    display: grid;
+    border-radius: 5px;
+    justify-self: center;
+    gap: 20px;
+    width: 320px;
+    border-bottom: 5px solid #f59e0b;
+}
+
+#pay {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+form div {
+    display: grid;
+}
+
+form h2 {
+    margin: 0;
+    justify-self: center;
+    color: #e2e8f0;
+}
+
+label {
+    color: #e2e8f0;
+}
+
+input, select, option {
+    height: 32px;
+    border: 2px solid #334155;
+    color: #0f172a;
+}
+
+#pagar-boton {
+    justify-self: center;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f59e0b;
+    color: #0f172a;
+    cursor: pointer;
+}
+
+#pagar-boton:hover {
+  background-color: #d97706;
+}
+
+#pagar-boton:active {
+    background-color: green;
+}

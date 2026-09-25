@@ -1,15 +1,11 @@
-/*Centrar recibo*/
-section {
-    display: flex;
-    justify-content: center;
-}
-
 /*Estilizar recibo*/
 #recibo {
+    margin: 0 200px 0 200px;
     border-radius: 5px;
     background-color: #1e293b;
     text-align: center;
     padding: 20px;
+    border-bottom: 5px solid #f59e0b;
 }
 
 #lista-compras {
@@ -36,13 +32,16 @@ section {
 }
 
 #redirecciones {
-    align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
 }
 
 /*Botones*/
 #pagar-boton {
+    width: 150px;
     padding: 8px;
     border: none;
     border-radius: 6px;
